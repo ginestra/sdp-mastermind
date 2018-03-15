@@ -1,0 +1,2 @@
+# sdp-mastermind
+Group coursework
