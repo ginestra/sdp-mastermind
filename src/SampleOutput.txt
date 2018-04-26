@@ -1,0 +1,553 @@
+Welcome to Mastermind.
+
+This is a text version of the classic board game Mastermind.
+The computer will think of a secret code.
+The code consists of 4 colored pegs.
+The pegs may be one of six colors: blue, green , orange, purple, red, or yellow.
+A color may appear more than once in the code.
+
+You try to guess what colored pegs are in the code and what order they are in
+After making a guess the result will be displayed.
+A result consists of a black peg for each peg you have exactly correct (color and position) in your guess.
+For each peg in the guess that is the correct color, but is out of position, you get a white peg.
+
+Only the first letter of the color is displayed. q1_2.B for Blue, R for Red, and so forth.
+When entering guesses you only need to enter the first character of the color as a capital letter.
+
+You have 12 to guess the answer or you lose the game.
+
+Generating secret code ....
+The secret code is YRBY
+You have 12 guesses left.
+
+What is your next guess?
+Type in the characters for your guess and press enter.
+Enter guess: OOOO
+
+The secret code is YRBY
+
+.... Secret Code
+OOOO Result: No pegs
+....
+....
+....
+....
+....
+....
+....
+....
+....
+....
+....
+
+You have 11 guesses left.
+
+What is your next guess?
+Type in the characters for your guess and press enter.
+Enter guess: oooo
+
+What is your next guess?
+Type in the characters for your guess and press enter.
+Enter guess: kkkk
+
+What is your next guess?
+Type in the characters for your guess and press enter.
+Enter guess: RRRRR
+
+What is your next guess?
+Type in the characters for your guess and press enter.
+Enter guess:
+
+What is your next guess?
+Type in the characters for your guess and press enter.
+Enter guess: RRRR
+
+The secret code is YRBY
+
+.... Secret Code
+OOOO Result: No pegs
+RRRR Result: Black
+....
+....
+....
+....
+....
+....
+....
+....
+....
+....
+
+You have 10 guesses left.
+
+What is your next guess?
+Type in the characters for your guess and press enter.
+Enter guess: YRBY
+
+The secret code is YRBY
+
+YRBY
+OOOO Result: No pegs
+RRRR Result: Black
+YRBY Result: Black Black Black Black
+
+You solved the puzzle! Good job.
+Enter Y for another game or anything else to quit: Y
+Generatring secret code ....
+The secret code is PRGP
+You have 12 guesses left.
+
+What is your next guess?
+Type in the characters for your guess and press enter.
+Enter guess: GGGG
+
+The secret code is PRGP
+
+.... Secret Code
+GGGG Result: Black
+....
+....
+....
+....
+....
+....
+....
+....
+....
+....
+....
+
+You have 11 guesses left.
+
+What is your next guess?
+Type in the characters for your guess and press enter.
+Enter guess: PPPP
+
+The secret code is PRGP
+
+.... Secret Code
+GGGG Result: Black
+PPPP Result: Black Black
+....
+....
+....
+....
+....
+....
+....
+....
+....
+....
+
+You have 10 guesses left.
+
+What is your next guess?
+Type in the characters for your guess and press enter.
+Enter guess: PRGP
+
+The secret code is PRGP
+
+PRGP
+GGGG Result: Black
+PPPP Result: Black Black
+PRGP Result: Black Black Black Black
+
+You solved the puzzle! Good job.
+Enter Y for another game or anything else to quit: k
+Welcome to Mastermind.
+
+This is a text version of the classic board game Mastermind.
+The computer will think of a secret code.
+The code consists of 4 colored pegs.
+The pegs may be one of six colors: blue, green , orange, purple, red, or yellow.
+q1_2.A color may appear more than once in the code.
+
+You try to guess what colored pegs are in the code and what order they are in
+After making a guess the result will be displayed.
+q1_2.A result consists of a black peg for each peg you have exactly correct (color and position) in your guess.
+For each peg in the guess that is the correct color, but is out of position, you get a white peg.
+
+Only the first letter of the color is displayed. q1_2.B for Blue, R for Red, and so forth.
+When entering guesses you only need to enter the first character of the color as a capital letter.
+
+You have 12 to guess the answer or you lose the game.
+
+Generating secret code ....
+You have 12 guesses left.
+
+What is your next guess?
+Type in the characters for your guess and press enter.
+Enter guess: RRRR
+
+
+.... Secret Code
+RRRR Result: No pegs
+....
+....
+....
+....
+....
+....
+....
+....
+....
+....
+....
+
+You have 11 guesses left.
+
+What is your next guess?
+Type in the characters for your guess and press enter.
+Enter guess: BBBB
+
+
+.... Secret Code
+RRRR Result: No pegs
+BBBB Result: Black Black Black
+....
+....
+....
+....
+....
+....
+....
+....
+....
+....
+
+You have 10 guesses left.
+
+What is your next guess?
+Type in the characters for your guess and press enter.
+Enter guess: BOBB
+
+
+.... Secret Code
+RRRR Result: No pegs
+BBBB Result: Black Black Black
+BOBB Result: Black Black White
+....
+....
+....
+....
+....
+....
+....
+....
+....
+
+You have 9 guesses left.
+
+What is your next guess?
+Type in the characters for your guess and press enter.
+Enter guess: PBBB
+
+
+.... Secret Code
+RRRR Result: No pegs
+BBBB Result: Black Black Black
+BOBB Result: Black Black White
+PBBB Result: Black Black White White
+....
+....
+....
+....
+....
+....
+....
+....
+
+You have 8 guesses left.
+
+What is your next guess?
+Type in the characters for your guess and press enter.
+Enter guess: BBPB
+
+
+.... Secret Code
+RRRR Result: No pegs
+BBBB Result: Black Black Black
+BOBB Result: Black Black White
+PBBB Result: Black Black White White
+BBPB Result: Black Black White White
+....
+....
+....
+....
+....
+....
+....
+
+You have 7 guesses left.
+
+What is your next guess?
+Type in the characters for your guess and press enter.
+Enter guess: BBBP
+
+
+BBBP
+RRRR Result: No pegs
+BBBB Result: Black Black Black
+BOBB Result: Black Black White
+PBBB Result: Black Black White White
+BBPB Result: Black Black White White
+BBBP Result: Black Black Black Black
+
+You solved the puzzle! Good job.
+Enter Y for another game or anything else to quit: Y
+Generatring secret code ....
+You have 12 guesses left.
+
+What is your next guess?
+Type in the characters for your guess and press enter.
+Enter guess: RRRR
+
+
+.... Secret Code
+RRRR Result: Black
+....
+....
+....
+....
+....
+....
+....
+....
+....
+....
+....
+
+You have 11 guesses left.
+
+What is your next guess?
+Type in the characters for your guess and press enter.
+Enter guess: BBBB
+
+
+.... Secret Code
+RRRR Result: Black
+BBBB Result: No pegs
+....
+....
+....
+....
+....
+....
+....
+....
+....
+....
+
+You have 10 guesses left.
+
+What is your next guess?
+Type in the characters for your guess and press enter.
+Enter guess: OOOO
+
+
+.... Secret Code
+RRRR Result: Black
+BBBB Result: No pegs
+OOOO Result: Black
+....
+....
+....
+....
+....
+....
+....
+....
+....
+
+You have 9 guesses left.
+
+What is your next guess?
+Type in the characters for your guess and press enter.
+Enter guess: PPPP
+
+
+.... Secret Code
+RRRR Result: Black
+BBBB Result: No pegs
+OOOO Result: Black
+PPPP Result: Black
+....
+....
+....
+....
+....
+....
+....
+....
+
+You have 8 guesses left.
+
+What is your next guess?
+Type in the characters for your guess and press enter.
+Enter guess: GGGG
+
+
+.... Secret Code
+RRRR Result: Black
+BBBB Result: No pegs
+OOOO Result: Black
+PPPP Result: Black
+GGGG Result: No pegs
+....
+....
+....
+....
+....
+....
+....
+
+You have 7 guesses left.
+
+What is your next guess?
+Type in the characters for your guess and press enter.
+Enter guess: YYYY
+
+
+.... Secret Code
+RRRR Result: Black
+BBBB Result: No pegs
+OOOO Result: Black
+PPPP Result: Black
+GGGG Result: No pegs
+YYYY Result: Black
+....
+....
+....
+....
+....
+....
+
+You have 6 guesses left.
+
+What is your next guess?
+Type in the characters for your guess and press enter.
+Enter guess: ROPY
+
+
+.... Secret Code
+RRRR Result: Black
+BBBB Result: No pegs
+OOOO Result: Black
+PPPP Result: Black
+GGGG Result: No pegs
+YYYY Result: Black
+ROPY Result: Black White White White
+....
+....
+....
+....
+....
+
+You have 5 guesses left.
+
+What is your next guess?
+Type in the characters for your guess and press enter.
+Enter guess: ROBB
+
+
+.... Secret Code
+RRRR Result: Black
+BBBB Result: No pegs
+OOOO Result: Black
+PPPP Result: Black
+GGGG Result: No pegs
+YYYY Result: Black
+ROPY Result: Black White White White
+ROBB Result: White White
+....
+....
+....
+....
+
+You have 4 guesses left.
+
+What is your next guess?
+Type in the characters for your guess and press enter.
+Enter guess: ROGG
+
+
+.... Secret Code
+RRRR Result: Black
+BBBB Result: No pegs
+OOOO Result: Black
+PPPP Result: Black
+GGGG Result: No pegs
+YYYY Result: Black
+ROPY Result: Black White White White
+ROBB Result: White White
+ROGG Result: White White
+....
+....
+....
+
+You have 3 guesses left.
+
+What is your next guess?
+Type in the characters for your guess and press enter.
+Enter guess: ROYP
+
+
+.... Secret Code
+RRRR Result: Black
+BBBB Result: No pegs
+OOOO Result: Black
+PPPP Result: Black
+GGGG Result: No pegs
+YYYY Result: Black
+ROPY Result: Black White White White
+ROBB Result: White White
+ROGG Result: White White
+ROYP Result: White White White White
+....
+....
+
+You have 2 guesses left.
+
+What is your next guess?
+Type in the characters for your guess and press enter.
+Enter guess: RRRR
+
+
+.... Secret Code
+RRRR Result: Black
+BBBB Result: No pegs
+OOOO Result: Black
+PPPP Result: Black
+GGGG Result: No pegs
+YYYY Result: Black
+ROPY Result: Black White White White
+ROBB Result: White White
+ROGG Result: White White
+ROYP Result: White White White White
+RRRR Result: Black
+....
+
+You have 1 guesses left.
+
+What is your next guess?
+Type in the characters for your guess and press enter.
+Enter guess: BBBB
+
+
+.... Secret Code
+RRRR Result: Black
+BBBB Result: No pegs
+OOOO Result: Black
+PPPP Result: Black
+GGGG Result: No pegs
+YYYY Result: Black
+ROPY Result: Black White White White
+ROBB Result: White White
+ROGG Result: White White
+ROYP Result: White White White White
+RRRR Result: Black
+BBBB Result: No pegs
+
+You did not solve the puzzle. Too bad.
+Enter Y for another game or anything else to quit: n
+

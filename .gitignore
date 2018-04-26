@@ -1,2 +1,23 @@
-*.class
+# IntelliJ
+
+.idea/**/workspace.xml
+.idea/**/tasks.xml
+.idea/dictionaries
+/out/
+
+.idea/**/*
+
+### Java ###
+# Compiled class file
+# *.class
+
+# Log file
 *.log
+
+# Package Files #
+*.jar
+*.war
+*.ear
+*.zip
+*.tar.gz
+*.rar
