@@ -3,8 +3,8 @@
 
 **Members**
 
-* Alun Davey - adavey03
 * Ahmed Saif - msaif01
+* Alun Davey - adavey03
 * Damanjit Singh - dsingh06
 * Ginestra Ferraro - gferra02
 
