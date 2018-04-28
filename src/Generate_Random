@@ -1,0 +1,26 @@
+import java.util.Random
+
+var num1:Int=0
+var num2:Int=0
+var num3:Int=0
+var num4:Int=0
+
+fun main(args: Array<String>) {
+
+    //Generate 4 random numbers
+
+
+
+    fun genRandomNum():Int {
+
+        return Random().nextInt((5-0))
+    }
+
+    num1=genRandomNum()
+    num2=genRandomNum()
+    num3=genRandomNum()
+    num4=genRandomNum()
+
+    println(num1.toString()+num2.toString()+num3.toString()+num4.toString())
+
+}
