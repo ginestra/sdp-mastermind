@@ -1,4 +1,4 @@
-
+package classes
 class GameAnswer(var o: GamePeg, var t: GamePeg, var th: GamePeg, var f: GamePeg){
 
     private lateinit var one: GamePeg
