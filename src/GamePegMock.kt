@@ -1,4 +1,4 @@
-class Gamepeg(val valuePassed: String){
+data class GamePeg(val valuePassed: String){
     lateinit var value:String;
     init{
         value = valuePassed;
