@@ -11,7 +11,6 @@ class GameAnswer(GamePeg one, GamePeg two, GamePeg three, GamePeg four){
         this.three = four
     }
 
-
     override fun toString(): String{
         return (one + two + three + four)
     }
