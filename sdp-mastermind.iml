@@ -30,5 +30,6 @@
         <SOURCES />
       </library>
     </orderEntry>
+    <orderEntry type="library" name="com.github.salomonbrys.kodein:kodein:4.1.0" level="project" />
   </component>
 </module>
