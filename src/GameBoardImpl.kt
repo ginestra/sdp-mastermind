@@ -1,8 +1,11 @@
 typealias GameGuess = Any
 
 class GameBoardImpl(answer:GameAnswer):GameBoard{
-
+    val numOfGuesses = 12
+    var guesses= mutableListOf<GameGuess>()
     var actualAnswer:GameAnswer
+    var isGameSolved:Boolean = false
+
     init{
         actualAnswer = answer
     }
@@ -12,23 +15,24 @@ class GameBoardImpl(answer:GameAnswer):GameBoard{
     }
 
     override fun addGuess(guess:GameGuess) {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+        if (guess.toString().equals(actualAnswer)){
+
+        }
+        guesses.add(guess)
     }
 
     override fun isSolved(): Boolean {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+        return isGameSolved
     }
 
     override fun getRemainingGuessCount(): Int {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
-    }
-
-    override fun resetBoard() {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+        return (numOfGuesses - guesses.size)
     }
 
     override fun toString(): String {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+        for (value in guesses){
+
+        }
     }
 
 }

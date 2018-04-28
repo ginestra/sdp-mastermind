@@ -21,11 +21,6 @@ interface GameBoard {
     fun getRemainingGuessCount() : Int
 
     /**
-     * Clear the game board, removes answer and guesses.
-     */
-    fun resetBoard()
-
-    /**
      * String representation of the entire board.
      */
     override fun toString() : String
