@@ -1,4 +1,4 @@
-package classes
+
 data class GamePeg(val valuePassed: String){
     lateinit var value:String;
 
