@@ -1,3 +1,5 @@
+typealias GameGuess = Any
+
 class GameBoardImpl(answer:GameAnswer):GameBoard{
 
     var actualAnswer:GameAnswer
@@ -6,7 +8,7 @@ class GameBoardImpl(answer:GameAnswer):GameBoard{
     }
 
     override fun getAnswer(): GameAnswer {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+        return actualAnswer
     }
 
     override fun addGuess(guess:GameGuess) {
