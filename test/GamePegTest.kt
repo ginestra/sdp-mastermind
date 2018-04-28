@@ -6,8 +6,8 @@ import org.junit.Assert.*
 class GamePegTest {
     @org.junit.Test
     fun execute() {
-        // Just checking IntelliJ is working
-        assertEquals("test1", "test1")
+        val peg = GamePeg("Y")
 
+        assertEquals(peg.toString(), "Y")
     }
 }
