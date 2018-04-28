@@ -1,8 +1,4 @@
 interface GameBoard {
-    /**
-     * Set the answer for the game board.
-     */
-    fun setAnswer(answer: GameAnswer)
 
     /**
      * Get the answer for the game board.
