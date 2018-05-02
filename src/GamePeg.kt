@@ -1,3 +1,3 @@
-class GamePeg(val colShortHand: String) {
-    override fun toString() : String = colShortHand
+enum class GamePeg {
+    R, G, Y, B
 }
