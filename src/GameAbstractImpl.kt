@@ -1,4 +1,4 @@
-abstract class GameAbstractImpl(private val showCode: Boolean) : Game
+abstract class GameAbstractImpl(protected val showCode: Boolean) : Game
 /**
  * Create a Game object.
  *
@@ -7,8 +7,3 @@ abstract class GameAbstractImpl(private val showCode: Boolean) : Game
  * false the secret code is not revealed until correctly guessed
  * or the player runs out of turns.
  */
-
-// if showCode is true then the secret code is revealed before
-// the gane starts. This will be used by graders of the program
-// to test the feedback of guesses
-// ...
