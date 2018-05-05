@@ -18,7 +18,7 @@ interface GameBoard {
     /**
      * Add a guess for the game board.
      */
-    fun addGuess(guess: GameGuess)
+    fun addGuess(guess: GameAnswer/*GameGuess*/)
 
     /**
      * Checks if any of the guesses match the answer.
