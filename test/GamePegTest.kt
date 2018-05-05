@@ -7,7 +7,7 @@ import org.junit.Test
 class GamePegTest {
     @Test
     fun validColourValues() {
-        listOf("R", "G", "Y", "B").forEach {
+        listOf("R", "G", "B", "Y", "O", "P").forEach {
             val peg = GamePeg.valueOf(it)
             assertEquals(peg.toString(), it)
         }
