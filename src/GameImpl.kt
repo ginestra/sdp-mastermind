@@ -55,12 +55,10 @@ class GameImpl(showCode: Boolean) : GameAbstractImpl(showCode) {
                                 GamePeg.valueOf("${input[3]}")
                             )
                         )
+                        validGuess = true;
+                        println()
                     }
-
-                    validGuess = true;
                 }  catch (exception: IllegalArgumentException) {}
-
-
             }
 
             if (gameBoard.isSolved()) break;
@@ -80,7 +78,7 @@ class GameImpl(showCode: Boolean) : GameAbstractImpl(showCode) {
     }
 
     fun printSecretCode(answer: String) {
-        println("The secret code is: $answer")
+        println("The secret code is: $answer\n")
     }
 
     fun promptForAnotherGame() : Boolean {
