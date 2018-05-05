@@ -12,7 +12,7 @@ class GameBoardImplTest {
     }
 
     @Test
-    fun testRemainingGuesses() {
+    fun remainingGuesses() {
         assertEquals(12, gameBoard.getRemainingGuessCount())
 
         gameBoard.addGuess(GameGuess(GamePeg.Y, GamePeg.Y, GamePeg.Y, GamePeg.Y))
@@ -20,7 +20,7 @@ class GameBoardImplTest {
     }
 
     @Test
-    fun testGoingOverGuessLimit() {
+    fun goingOverGuessLimit() {
         assertEquals(12, gameBoard.getRemainingGuessCount())
 
         repeat(12) {
@@ -38,7 +38,7 @@ class GameBoardImplTest {
     }
 
     @Test
-    fun testIsSolved() {
+    fun isSolved() {
         val answerStr = gameBoard.answer.toString();
 
         val correctGuess = GameGuess(
@@ -53,5 +53,16 @@ class GameBoardImplTest {
         gameBoard.addGuess(correctGuess)
 
         assertTrue(gameBoard.isSolved())
+    }
+
+    @Test
+    fun stringOutput() {
+        val totalGuesses = gameBoard.getRemainingGuessCount()
+
+        var expectedStr = "";
+
+        repeat(totalGuesses) { expectedStr += "....\n" }
+
+        assertEquals(expectedStr, gameBoard.toString())
     }
 }

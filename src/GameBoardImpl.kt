@@ -31,7 +31,7 @@ class GameBoardImpl (val answer: GameAnswer) {
         }
 
         // Print placeholders for remaining guesses
-        repeat (getRemainingGuessCount()) { str += "...." }
+        repeat (getRemainingGuessCount()) { str += "....\n" }
 
         return str;
     }
