@@ -5,7 +5,7 @@ class GameImpl(showCode: Boolean) : GameAbstractImpl(showCode) {
                 "This is a text version of the classic board game Mastermind.\n" +
                 "The computer will think of a secret code.\n" +
                 "The code consists of 4 colored pegs.\n" +
-                "The pegs may be one of six colors: blue, green , orange, purple, red, or yellow.\n" +
+                "The pegs may be one of six colors: blue, green, orange, purple, red, or yellow.\n" +
                 "A color may appear more than once in the code.\n" +
                 "\n" +
                 "You try to guess what colored pegs are in the code and what order they are in\n" +
