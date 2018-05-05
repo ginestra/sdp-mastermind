@@ -52,7 +52,14 @@ class GameBoardImpl (val answer: GameAnswer) {
     }
 
     override fun toString() : String {
-        var str = "";
+
+        var str = ""
+
+        if (isSolved()) {
+            str += answer
+        } else {
+            str += ".... Secret Code"
+        }
 
         guesses.forEach {
             val hint = getGuessHint(it)
@@ -60,8 +67,8 @@ class GameBoardImpl (val answer: GameAnswer) {
         }
 
         // Print placeholders for remaining guesses
-        repeat (getRemainingGuessCount()) { str += "....\n" }
+        repeat(getRemainingGuessCount()) { str += "....\n" }
 
-        return str;
+        return str
     }
 }
