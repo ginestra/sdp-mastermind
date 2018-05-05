@@ -1,5 +1,19 @@
 interface GameBoard {
-    var answer: GameAnswer
+
+    /**
+     * Holds the GameAnswer for the GameBoard.
+     */
+    var answer : GameAnswer
+
+    /**
+     * Holds each of the GameGuess for the GameBoard.
+     */
+    var guesses : MutableList<GameGuess>
+
+    /**
+     * Specifies the max number of guesses per game.
+     */
+    val guessLimit : Int
 
     /**
      * Add a guess for the game board.
