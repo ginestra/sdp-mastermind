@@ -1,3 +1,3 @@
 enum class GamePeg {
-    R, G, Y, B
+    R, G, B, Y, O, P
 }
