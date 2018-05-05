@@ -1,20 +1,21 @@
 class GameBoardImpl (val answer: GameAnswer) {
-    private var guesses = mutableListOf<GameGuess>()
+    private val guesses = mutableListOf<GameGuess>()
     private val guessLimit = 12
 
     fun addGuess(guess: GameGuess) {
+        if (getRemainingGuessCount() < 1) throw Exception("You are out of guesses")
         guesses.add(guess)
     }
 
     fun isSolved() : Boolean {
-        var answer = false
+        var answerResult = false
         for (a in guesses){
             if (a.toString().equals(answer.toString())){
-                answer = true
+                answerResult = true
                 break
             }
         }
-        return answer
+        return answerResult
     }
 
     fun getRemainingGuessCount() : Int {
@@ -30,7 +31,7 @@ class GameBoardImpl (val answer: GameAnswer) {
         }
 
         // Print placeholders for remaining guesses
-        repeat (getRemainingGuessCount()) { str += "...." }
+        repeat (getRemainingGuessCount()) { str += "....\n" }
 
         return str;
     }
