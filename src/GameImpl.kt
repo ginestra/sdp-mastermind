@@ -55,13 +55,13 @@ class GameImpl(showCode: Boolean) : GameAbstractImpl(showCode) {
                                 GamePeg.valueOf("${input[3]}")
                             )
                         )
-                        validGuess = true;
+                        validGuess = true
                         println()
                     }
                 }  catch (exception: IllegalArgumentException) {}
             }
 
-            if (gameBoard.isSolved()) break;
+            if (gameBoard.isSolved()) break
 
             if (showCode) printSecretCode(answer.toString())
             println(gameBoard.toString())
