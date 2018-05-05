@@ -1,7 +1,14 @@
 import org.junit.Test
+import kotlin.test.assertEquals
 
 class GameBoardImplTest {
     @Test
-    val newGame = GameBoardImpl(GameAnswer())
+
+    fun testRemainingGuesses() {
+        val gameBoard = GameBoardImpl(generateGameAnswer())
+        assertEquals(12, gameBoard.getRemainingGuessCount())
+
+    }
+
 
 }
