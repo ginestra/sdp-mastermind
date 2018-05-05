@@ -1,4 +1,4 @@
-class GameBoardImpl (answer: GameAnswer) {
+class GameBoardImpl (val answer: GameAnswer) {
     var guesses = mutableListOf<GameGuess>()
     val guessLimit = 12
 
