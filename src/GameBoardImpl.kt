@@ -1,13 +1,13 @@
-class GameBoardImpl (val answer: GameAnswer) {
-    private val guesses = mutableListOf<GameGuess>()
-    private val guessLimit = 12
+class GameBoardImpl(answer: GameAnswer) : GameBoard(answer) {
+    override val guesses = mutableListOf<GameGuess>()
+    override val guessLimit = 12
 
-    fun addGuess(guess: GameGuess) {
+    override fun addGuess(guess: GameGuess) {
         if (getRemainingGuessCount() < 1) throw Exception("You are out of guesses")
         guesses.add(guess)
     }
 
-    fun isSolved() : Boolean {
+    override fun isSolved() : Boolean {
         var answerResult = false
         for (a in guesses){
             if (a.toString().equals(answer.toString())){
@@ -18,11 +18,11 @@ class GameBoardImpl (val answer: GameAnswer) {
         return answerResult
     }
 
-    fun getRemainingGuessCount() : Int {
+    override fun getRemainingGuessCount() : Int {
         return guessLimit - guesses.size;
     }
 
-    fun getGuessHint(guess: GameGuess) : String {
+    override fun getGuessHint(guess: GameGuess) : String {
         val guessStr = guess.toString()
         val answerStr = answer.toString()
 
