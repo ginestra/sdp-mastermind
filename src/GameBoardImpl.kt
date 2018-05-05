@@ -16,4 +16,26 @@ class GameBoardImpl (val answer: GameAnswer) {
         }
         return answer
     }
+
+    fun getRemainingGuessCount() : Int {
+        return guessLimit - guesses.size;
+    }
+
+    override fun toString() : String {
+        var str = "";
+
+        guesses.forEach {
+            val result = getGuessResult(it)
+            str += "$it Result: $result\n"
+        }
+
+        // Print placeholders for remaining guesses
+        repeat (getRemainingGuessCount()) { str += "...." }
+
+        return str;
+    }
+
+    private fun getGuessResult(guess: GameGuess) : String {
+        return "TODO!"
+    }
 }
