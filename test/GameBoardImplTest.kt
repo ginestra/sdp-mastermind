@@ -1,12 +1,18 @@
 import org.junit.Assert
 import org.junit.Test
 import org.junit.Assert.*
+import org.junit.Before
 
 class GameBoardImplTest {
-    @Test
+    lateinit var gameBoard : GameBoardImpl
 
+    @Before
+    fun createGameBoard() {
+        gameBoard = GameBoardImpl(generateGameAnswer())
+    }
+
+    @Test
     fun testRemainingGuesses() {
-        val gameBoard = GameBoardImpl(generateGameAnswer())
         assertEquals(12, gameBoard.getRemainingGuessCount())
 
         gameBoard.addGuess(GameGuess(GamePeg.Y, GamePeg.Y, GamePeg.Y, GamePeg.Y))
@@ -15,7 +21,6 @@ class GameBoardImplTest {
 
     @Test
     fun testGoingOverGuessLimit() {
-        val gameBoard = GameBoardImpl(generateGameAnswer())
         assertEquals(12, gameBoard.getRemainingGuessCount())
 
         repeat(12) {
@@ -32,4 +37,12 @@ class GameBoardImplTest {
         assertEquals(0, gameBoard.getRemainingGuessCount())
     }
 
+    @Test
+    fun testIsSolved() {
+        val fakeSecretCode = GameAnswer(GamePeg.R, GamePeg.B, GamePeg.Y, GamePeg.Y)
+
+        println(fakeSecretCode)
+
+        // assertTrue(gameBoard.isSolved())
+    }
 }

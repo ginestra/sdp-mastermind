@@ -1,5 +1,5 @@
 class GameBoardImpl (val answer: GameAnswer) {
-    private var guesses = mutableListOf<GameGuess>()
+    private val guesses = mutableListOf<GameGuess>()
     private val guessLimit = 12
 
     fun addGuess(guess: GameGuess) {
