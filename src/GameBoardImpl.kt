@@ -8,14 +8,14 @@ class GameBoardImpl (val answer: GameAnswer) {
     }
 
     fun isSolved() : Boolean {
-        var answer = false
+        var answerResult = false
         for (a in guesses){
             if (a.toString().equals(answer.toString())){
-                answer = true
+                answerResult = true
                 break
             }
         }
-        return answer
+        return answerResult
     }
 
     fun getRemainingGuessCount() : Int {

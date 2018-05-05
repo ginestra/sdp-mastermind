@@ -39,10 +39,19 @@ class GameBoardImplTest {
 
     @Test
     fun testIsSolved() {
-        val fakeSecretCode = GameAnswer(GamePeg.R, GamePeg.B, GamePeg.Y, GamePeg.Y)
+        val answerStr = gameBoard.answer.toString();
 
-        println(fakeSecretCode)
+        val correctGuess = GameGuess(
+            GamePeg.valueOf("${answerStr[0]}"),
+            GamePeg.valueOf("${answerStr[1]}"),
+            GamePeg.valueOf("${answerStr[2]}"),
+            GamePeg.valueOf("${answerStr[3]}")
+        )
 
-        // assertTrue(gameBoard.isSolved())
+        assertFalse(gameBoard.isSolved())
+
+        gameBoard.addGuess(correctGuess)
+
+        assertTrue(gameBoard.isSolved())
     }
 }
