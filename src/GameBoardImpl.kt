@@ -22,21 +22,46 @@ class GameBoardImpl (val answer: GameAnswer) {
         return guessLimit - guesses.size;
     }
 
+    fun getGuessHint(guess: GameGuess) : String {
+        val guessStr = guess.toString()
+        val answerStr = answer.toString()
+
+        var matches = 0
+        var contains = 0
+        var noMatch = mutableListOf<Int>()
+
+        for (i in 0 until answerStr.length) {
+            if (guessStr[i] == answerStr[i]) {
+                matches++
+            } else {
+                noMatch.add(i)
+            }
+        }
+
+        noMatch.forEach {
+            val i = it
+            noMatch.forEach {
+                if (guessStr[i] == answerStr[it]) contains++
+            }
+        }
+
+        var str = ""
+        repeat(matches) { str += "Black " }
+        repeat(contains) { str += "White " }
+        return str.trimEnd()
+    }
+
     override fun toString() : String {
         var str = "";
 
         guesses.forEach {
-            val result = getGuessResult(it)
-            str += "$it Result: $result\n"
+            val hint = getGuessHint(it)
+            str += "$it Result: $hint\n"
         }
 
         // Print placeholders for remaining guesses
         repeat (getRemainingGuessCount()) { str += "....\n" }
 
         return str;
-    }
-
-    private fun getGuessResult(guess: GameGuess) : String {
-        return "TODO!"
     }
 }
