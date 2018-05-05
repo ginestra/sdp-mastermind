@@ -22,5 +22,4 @@ class GameImpl(showCode: Boolean) : GameAbstractImpl(showCode) {
 
         println("The secret code is: " + GameAnswer(GamePeg.R, GamePeg.B, GamePeg.Y, GamePeg.Y))
     }
-
 }
