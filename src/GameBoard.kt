@@ -1,5 +1,4 @@
 interface GameBoard {
-
     /**
      * Holds the GameAnswer for the GameBoard.
      */
@@ -29,6 +28,11 @@ interface GameBoard {
      * How many guesses remain.
      */
     fun getRemainingGuessCount() : Int
+
+    /**
+     *  Get hint on how close the guess was to the answer.
+     */
+    fun getGuessHint() : String
 
     /**
      * String representation of the entire board.

@@ -65,4 +65,34 @@ class GameBoardImplTest {
 
         assertEquals(expectedStr, gameBoard.toString())
     }
+
+    @Test
+    fun getGuessHint() {
+        val gameAnswer = GameAnswer(GamePeg.B, GamePeg.B, GamePeg.B, GamePeg.Y)
+        val gameBoard = GameBoardImpl(gameAnswer)
+
+        assertEquals("Black Black Black Black",
+                gameBoard.getGuessHint(GameGuess(GamePeg.B, GamePeg.B, GamePeg.B, GamePeg.Y))
+        )
+
+        assertEquals("Black Black White White",
+                gameBoard.getGuessHint(GameGuess(GamePeg.B, GamePeg.B, GamePeg.Y, GamePeg.B))
+        )
+
+        assertEquals("Black Black Black",
+                gameBoard.getGuessHint(GameGuess(GamePeg.B, GamePeg.B, GamePeg.B, GamePeg.B))
+        )
+
+        assertEquals("Black White",
+                gameBoard.getGuessHint(GameGuess(GamePeg.Y, GamePeg.B, GamePeg.R, GamePeg.R))
+        )
+
+        assertEquals("Black",
+                gameBoard.getGuessHint(GameGuess(GamePeg.B, GamePeg.R, GamePeg.R, GamePeg.R))
+        )
+
+        assertEquals("White",
+                gameBoard.getGuessHint(GameGuess(GamePeg.Y, GamePeg.R, GamePeg.R, GamePeg.R))
+        )
+    }
 }
