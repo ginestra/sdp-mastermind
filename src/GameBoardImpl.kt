@@ -46,28 +46,26 @@ class GameBoardImpl (val answer: GameAnswer) {
         }
 
         var str = ""
-        repeat(matches) { str += "Black " }
-        repeat(contains) { str += "White " }
+        if (matches > 0 || contains > 0) {
+            repeat(matches) { str += "Black " }
+            repeat(contains) { str += "White " }
+        } else {
+            str += "No pegs"
+        }
         return str.trimEnd()
     }
 
     override fun toString() : String {
+        val isSolved = isSolved()
 
-        var str = ""
-
-        if (isSolved()) {
-            str += answer
-        } else {
-            str += ".... Secret Code"
-        }
-
+        var str = (if (isSolved) "$answer\n" else ".... Secret Code\n")
         guesses.forEach {
             val hint = getGuessHint(it)
             str += "$it Result: $hint\n"
         }
 
         // Print placeholders for remaining guesses
-        repeat(getRemainingGuessCount()) { str += "....\n" }
+        if (!isSolved) repeat(getRemainingGuessCount()) { str += "....\n" }
 
         return str
     }
