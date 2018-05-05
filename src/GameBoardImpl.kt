@@ -3,6 +3,7 @@ class GameBoardImpl (val answer: GameAnswer) {
     private val guessLimit = 12
 
     fun addGuess(guess: GameGuess) {
+        if (getRemainingGuessCount() < 1) throw Exception("You are out of guesses")
         guesses.add(guess)
     }
 
