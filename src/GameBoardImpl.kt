@@ -9,8 +9,7 @@ class GameBoardImpl (val answer: GameAnswer) {
     fun isSolved() : Boolean {
         var answer = false
         for (a in guesses){
-            val example: String = ""+ a.o.toString() + a.t.toString() + a.th.toString() + a.f.toString()
-            if (example.equals(answer.toString())){
+            if (a.toString().equals(answer.toString())){
                 answer = true
                 break
             }
