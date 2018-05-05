@@ -3,7 +3,7 @@ class GameBoardImpl (answer: GameAnswer) {
     val guessLimit = 12
 
     fun addGuess(guess: GameGuess) {
-
+        guesses.add(guess)
     }
 
     fun isSolved() : Boolean {
