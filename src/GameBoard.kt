@@ -1,13 +1,5 @@
 interface GameBoard {
-    /**
-     * Set the answer for the game board.
-     */
-    fun setAnswer(answer: GameAnswer)
-
-    /**
-     * Get the answer for the game board.
-     */
-    fun getAnswer() : GameAnswer
+    var answer: GameAnswer
 
     /**
      * Add a guess for the game board.
