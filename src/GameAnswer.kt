@@ -1,5 +1,5 @@
 
-class GameAnswer(var o: GamePeg, var t: GamePeg, var th: GamePeg, var f: GamePeg){
+open class GameAnswer(var o: GamePeg, var t: GamePeg, var th: GamePeg, var f: GamePeg){
 
     private var one: GamePeg
     private var two: GamePeg
