@@ -1,1 +1,2 @@
-class GameGuess(o: GamePeg, t: GamePeg, th: GamePeg, f: GamePeg) : GameAnswer(o, t, th, f)
+class GameGuess(one: GamePeg, two: GamePeg, three: GamePeg, four: GamePeg) :
+        GameAnswer(one, two, three, four)

@@ -1,41 +1,41 @@
-interface GameBoard {
-    /**
-     * Holds the GameAnswer for the GameBoard.
-     */
-    val answer : GameAnswer
-
+/**
+ * GameBoard holds the overall state of the game.
+ *
+ * @property answer Holds the GameAnswer for the GameBoard.
+ */
+abstract class GameBoard (val answer: GameAnswer) {
     /**
      * Holds each of the GameGuess for the GameBoard.
      */
-    var guesses : MutableList<GameGuess>
+    protected abstract val guesses : MutableList<GameGuess>
 
     /**
      * Specifies the max number of guesses per game.
      */
-    val guessLimit : Int
+    protected abstract val guessLimit : Int
 
     /**
      * Add a guess for the game board.
      */
-    fun addGuess(guess: GameGuess)
+    abstract fun addGuess(guess: GameGuess)
 
     /**
      * Checks if any of the guesses match the answer.
      */
-    fun isSolved() : Boolean
+    abstract fun isSolved() : Boolean
 
     /**
      * How many guesses remain.
      */
-    fun getRemainingGuessCount() : Int
+    abstract fun getRemainingGuessCount() : Int
 
     /**
      *  Get hint on how close the guess was to the answer.
      */
-    fun getGuessHint() : String
+    abstract fun getGuessHint(guess: GameGuess) : String
 
     /**
      * String representation of the entire board.
      */
-    override fun toString() : String
+    abstract override fun toString() : String
 }
