@@ -59,7 +59,7 @@ class GameBoardImplTest {
     fun stringOutput() {
         val totalGuesses = gameBoard.getRemainingGuessCount()
 
-        var expectedStr = "";
+        var expectedStr = ".... Secret Code\n";
 
         repeat(totalGuesses) { expectedStr += "....\n" }
 
